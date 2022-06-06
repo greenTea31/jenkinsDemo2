@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'demoAgent'
+    }
 
     stages {
         stage('Build') {
@@ -9,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                build 'mavenproject'
+                echo "202206071400"
             }
         }
         stage('Deploy') {

@@ -4,19 +4,9 @@ pipeline {
     }
     
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
         stage('Test') {
             steps {
-                echo "202206071020"
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                echo "202206071028"
             }
         }
     }
